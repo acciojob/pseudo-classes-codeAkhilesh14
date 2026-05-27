@@ -1,28 +1,66 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Webpage</title>
 
+  <style>
+    /* Background Color */
+    :root {
+      background-color: rgb(135, 206, 235);
+    }
+
+    /* Article Paragraph Styling */
+    article p:first-child {
+      color: white;
+      background-color: black;
+    }
+
+    article p:nth-child(2) {
+      color: black;
+    }
+
+    article p:last-child {
+      color: red;
+    }
+
+    /* Unordered List Styling */
+    ul li {
+      background-color: gray;
+      width: 50%;
+      padding: 10px;
+    }
+
+    ul li:nth-child(odd) {
+      background-color: white;
+    }
+
+    ul li:first-child,
+    ul li:last-child {
+      font-size: 22px;
+    }
+
+    ul li:nth-last-child(3) {
+      background-color: pink;
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-	<div class="container">
-	    <p>First paragraph</p>
-	    <p>Second paragraph</p>
-	    <p>Third paragraph</p>
-	</div>
-	<ul>
-	    <li>Item 1</li>
-	    <li>Item 2</li>
-	    <li>Item 3</li>
-	    <li>Item 4</li>
-	    <li>Item 5</li>
-	</ul>
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <article>
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <p>This is the third paragraph.</p>
+  </article>
+
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
 
 </body>
-
 </html>
